@@ -1,34 +1,32 @@
-/*  {
-  padding: 0;
-  margin: 0;
-} */
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Poppins:wght@400;700&display=swap");
+
 body {
   background-color: #1e1e1e;
-}
-.container {
-  width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin: 0;
+  font-family: "Didact Gothic", sans-serif;
+}
+.container {
+  display: flex;
+  align-items: center;
   flex-direction: column;
-
   padding-block: 2rem;
-  width: min(95%, 70rem);
-  height: 90vh;
+  width: min(70%, 50rem);
+  height: 90%;
   margin-inline: auto;
-
-  margin-top: 25px;
-
-  background: #393939;
-  padding: 1.5rem;
+  /* margin-top: 25px; */
   border-radius: 10px;
+  background: #393939;
+  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset,
+    10px 10px 4px 0px rgba(29, 29, 29, 0.25);
+  padding: 1.5rem;
 }
 h1 {
   font-size: 3rem;
+  font-family: "Poppins", sans-serif;
   color: white;
-  margin-block-start: 0em;
-  margin-block-end: 0.6em;
 }
 h1 span {
   color: #dd6387;
@@ -40,27 +38,49 @@ h1 span {
   grid-template-columns: repeat(3, 1fr);
 }
 .card {
+  /* width: 210px; */
+  padding: 1rem;
   background: #f4a6c8;
-  padding: 40px;
   border-radius: 10px;
   box-shadow: 5px 5px 4px 0px rgba(244, 166, 200, 0.25);
+  cursor: pointer;
+  border: solid transparent;
+}
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+.grid-row-span-2 {
+  grid-row: span 2;
+}
+.card:hover {
+  border: solid rgb(32, 100, 173);
+}
+.card__h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2d2c2c;
+}
+.card__span {
+  color: #4d4d4d;
+  font-size: 0.9rem;
 }
 .card-medium {
   background: #e0b0ff;
   box-shadow: 5px 5px 4px 0px rgba(224, 176, 255, 0.25);
 }
+
 .card-low {
   background: #b2f7e2;
   box-shadow: 5px 5px 4px 0px rgba(178, 247, 226, 0.25);
 }
 
-.boton-fijo {
+.button-fixed {
   border-radius: 10px;
   background: #2d2c2c;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 4px 0px #1d1d1d;
   position: fixed;
-  bottom: 50px; /* Distancia del botón desde el borde inferior de la pantalla */
-  right: 140px; /* Distancia del botón desde el borde derecho de la pantalla */
+  bottom: 5%;
+  right: 12%;
   padding: 10px 20px;
   font-size: 1.5rem;
   border: none;
@@ -68,19 +88,18 @@ h1 span {
   cursor: pointer;
 }
 
-/* Opcional: Estilos adicionales para hacer que el botón sea más visible y atractivo */
-.boton-fijo:hover {
+.button-fixed:hover {
   background-color: #303133;
 }
 
-.boton-fijo:focus {
-  outline: none; /* Quita el resaltado al hacer clic en el botón */
+.button-fixed:focus {
+  outline: none;
 }
 
 .input-group {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .input {
