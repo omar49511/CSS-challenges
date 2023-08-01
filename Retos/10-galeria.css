@@ -1,0 +1,117 @@
+/*  {
+  padding: 0;
+  margin: 0;
+} */
+body {
+  background-color: #1e1e1e;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  height: 90vh;
+  margin-inline: auto;
+
+  margin-top: 25px;
+
+  background: #393939;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-block-start: 0em;
+  margin-block-end: 0.6em;
+}
+h1 span {
+  color: #dd6387;
+}
+
+.notes-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card {
+  background: #f4a6c8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 4px 0px rgba(244, 166, 200, 0.25);
+}
+.card-medium {
+  background: #e0b0ff;
+  box-shadow: 5px 5px 4px 0px rgba(224, 176, 255, 0.25);
+}
+.card-low {
+  background: #b2f7e2;
+  box-shadow: 5px 5px 4px 0px rgba(178, 247, 226, 0.25);
+}
+
+.boton-fijo {
+  border-radius: 10px;
+  background: #2d2c2c;
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 4px 0px #1d1d1d;
+  position: fixed;
+  bottom: 50px; /* Distancia del botón desde el borde inferior de la pantalla */
+  right: 140px; /* Distancia del botón desde el borde derecho de la pantalla */
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+/* Opcional: Estilos adicionales para hacer que el botón sea más visible y atractivo */
+.boton-fijo:hover {
+  background-color: #303133;
+}
+
+.boton-fijo:focus {
+  outline: none; /* Quita el resaltado al hacer clic en el botón */
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  min-height: 50px;
+  max-width: 350px;
+  padding: 0 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+  border: 1px solid #dd6387;
+  border-radius: 6px 0 0 6px;
+  background-color: transparent;
+}
+
+.button--submit {
+  min-height: 52px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background-color: #dd6387;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button--submit:hover {
+  background-color: #c7718b;
+}
+
+.input:focus,
+.input:focus-visible {
+  border-color: #ec38b6;
+  outline: none;
+}
