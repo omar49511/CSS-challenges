@@ -19,8 +19,8 @@ body {
   /* margin-top: 25px; */
   border-radius: 10px;
   background: #393939;
-  box-shadow: 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset,
-    10px 10px 4px 0px rgba(29, 29, 29, 0.25);
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #050505, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #5e5e5e;
   padding: 1.5rem;
 }
 h1 {
@@ -75,21 +75,28 @@ h1 span {
 }
 
 .button-fixed {
-  border-radius: 10px;
-  background: #2d2c2c;
-  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset, 4px 4px 4px 0px #1d1d1d;
   position: fixed;
   bottom: 5%;
   right: 12%;
-  padding: 10px 20px;
-  font-size: 1.5rem;
-  border: none;
-
+  padding: 20px 20px;
   cursor: pointer;
+  color: #dd6387;
+  border-radius: 100px;
+  background: #2d2c2c;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444,
+    inset -5px -5px 10px #222;
+  border: none;
+  font-size: 1.5rem;
+  transition: 500ms;
 }
 
 .button-fixed:hover {
-  background-color: #303133;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222,
+    inset -5px -5px 10px #444;
+  transition: 500ms;
+  color: #a36476;
 }
 
 .button-fixed:focus {
