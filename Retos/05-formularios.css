@@ -1,0 +1,77 @@
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: gray;
+}
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+#actual-table {
+  border-collapse: collapse;
+}
+#actual-table td:nth-child(odd) {
+  background: #ffffff;
+}
+#actual-table td {
+  width: 31.33%;
+  vertical-align: top;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
+input {
+  margin-bottom: 15px;
+  padding: 5px;
+  border: 0px;
+  width: 94%;
+  font-size: 16px;
+  padding: 7px 3% 7px 3%;
+  background-color: #ebedee;
+  font-family: "Open Sans", sans-serif;
+  -webkit-box-shadow: inset 10px 10px 4px -9px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 10px 10px 4px -9px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 10px 10px 4px -9px rgba(0, 0, 0, 0.25);
+}
+.newsletterForm input {
+  margin-top: 11px;
+  margin-bottom: 0px;
+}
+.homeCol3 {
+  text-align: center;
+  font-size: 14px;
+}
+.homeCol3 img {
+  width: 89.5%;
+  max-width: 313px;
+  margin-top: -25px;
+}
+.homeColPadding {
+  padding: 15px 28px 28px 28px;
+  text-align: left;
+}
